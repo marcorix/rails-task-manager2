@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1>Task <%= @task.title %></h1>
+  <h3>Details: <%= @task.details %></h3>
+  <% if @task.completed %>
+    <i class="fa-regular fa-square-check"></i></i> This task is completed
+  <% else %>
+    <i class="fa-regular fa-square"></i> This task is not completed yet
+  <% end %>
+</div>
